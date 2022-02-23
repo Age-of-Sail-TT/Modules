@@ -39,7 +39,7 @@ end
 --  Enemy
 
 local function underSiege()
-  if (City.countBuildings(Draft.getDraft("$YourTownIsInRaid0")) > 0 or City.countBuildings(Draft.getDraft("AosEnemyTile00")) > 0) then return true end
+  if (City.countBuildings(Draft.getDraft("$")) > 0 or City.countBuildings(Draft.getDraft("$")) > 0) then return true end
   return false
 end
 
