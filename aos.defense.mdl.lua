@@ -89,10 +89,10 @@ local function shootFx(le, we, x, y)
   if le ~= nil and we ~= nil then
     if tileLand(x, y) then
       Builder.buildBuilding(le, x, y)
-      if math.random() > 0.5 then City.playSound(Draft.getDraft("$aos_sfx_shiphit"), x, y, 1.0, false) else City.playSound(Draft.getDraft("$aos_sfx_artillerycannon"), x, y, 1.0, false) end
+      if math.random() > 0.5 then City.playSound(Draft.getDraft("$aos_sfx"), x, y, 1.0, false) else City.playSound(Draft.getDraft("$aos_sfx"), x, y, 1.0, false) end
     elseif tileWater(x, y) then
       Builder.buildBuilding(we, x, y)
-      if math.random() > 0.5 then City.playSound(Draft.getDraft("$aos_sfx_shiphit"), x, y, 1.0, false) else City.playSound(Draft.getDraft("$aos_sfx_artillerycannon"), x, y, 1.0, false) end
+      if math.random() > 0.5 then City.playSound(Draft.getDraft("$aos_sfx"), x, y, 1.0, false) else City.playSound(Draft.getDraft("$aos_sfx"), x, y, 1.0, false) end
     end
   end
 end
